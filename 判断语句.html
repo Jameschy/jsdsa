@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>判断语句</title>
+</head>
+<body>
+<div></div>
+</body>
+<script type="text/javascript">
+    // 简单的if语句
+    var mid = 25,high = 50,low = 1, current = 13, found = -1;
+    if (current < mid){
+        mid = (current - low)/2;
+        console.log("a +" + mid);
+    }
+    console.log("Hello" + mid); //6
+
+    //if-else语句
+    if (current <mid){
+        mid = (current - low)/2;
+    }else {
+        mid = (current + high)/2;
+    }
+    console.log(mid + "if-else语句");//31.5
+    //if-else-if语句
+     if (current < mid){
+         mid = (current - low)/2
+     }else if (current > mid){
+         mid = (current + high)/2
+     }else {
+         found = current;
+     }
+     console.log(mid + "ifelseif" + found);
+
+</script>
+</html>
