@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for子程函数</title>
+</head>
+<body>
+<script type="text/javascript">
+    function curve(arr, amount) {
+        for (var i= 0;i< arr.length;++i){
+            arr[i] += amount;
+        }
+    }
+    var grades = [77,73,74,81,90];
+    curve(grades,5);
+    console.log(grades);
+</script>
+</body>
+</html>
