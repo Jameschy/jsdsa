@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局滥用</title>
+</head>
+<body>
+<script type="text/javascript">
+    // function showScope() {
+    //     scope = "local";
+    //     return scope;
+    // }
+    function showScope() {
+        var scope = "local";
+        return scope;
+    }
+    scope = "global";
+    console.log(scope);
+    console.log(showScope());
+    console.log(scope);
+</script>
+</body>
+</html>

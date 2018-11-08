@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象编程</title>
+</head>
+<body>
+<script type="text/javascript">
+    //场景 检查银行账户对象，构造函数
+
+    // 查询函数
+    function Checking(amount) {
+        this.balance = amount;//属性
+        this.deposit = deposit;//方法
+        this.withdraw = withdraw;//方法;
+        this.toString = toString;//方法
+    }
+
+    // 存入函数
+    function deposit(amount) {
+        this.balance += amount;
+    }
+
+    // 取出函数
+    function withdraw(amount) {
+        if (amount <= this.balance) {
+            this.balance -= amount;
+        }
+        if (amount > this.balance){
+            console.log("Insufficient funds");
+        }
+    }
+
+    // 参数展示函数
+    function toString() {
+        return "Balance" + this.balance;
+    }
+
+    var account = new Checking(1500);
+    account.deposit(1000);//账户存入
+    console.log(account.toString());
+    account.withdraw(250);//账户取出
+    console.log(account.toString());//实时账户
+    account.withdraw(800);//账户取出
+    console.log(account.toString());//实时查询
+</script>
+</body>
+</html>
