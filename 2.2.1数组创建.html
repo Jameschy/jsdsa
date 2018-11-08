@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建数组</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //var 声明变量创建数组
+    var numbers =[1,2,3,4,5];
+    console.log("数组1长度是" + numbers.length);//5
+    console.log(numbers[2]);//3
+
+    var numbers2 = new Array(1,2,3,4,5,6);
+    console.log("数组2长度是"+ numbers2.length); //6
+
+    //new Array()构造函数式创建数组
+    //当创建数组只传入一个参数时，代表指定数组长度
+    var numbers3 = new Array(10);
+    console.log("数组3长度是" + numbers3.length);
+
+    // 数组元素可以不是同一种数据类型
+    var objects = [1,"Joe",true,null];
+    console.log(Array.isArray(objects));//判断是否为数组
+
+    // 创建数组，使用[];比构造函数array效率高
+</script>
+</body>
+</html>

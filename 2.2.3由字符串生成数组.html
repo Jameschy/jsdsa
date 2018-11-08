@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>由字符串生成数组</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var sentence = "the quick brown fox jumped over the lazy dog!!"
+
+var words = sentence.split(" ");
+// 创建words数组对象,将sentence以空格切割后保存至其中!
+for (var i = 0;i <words.length; ++i){
+    console.log("word"+i+":"+words[i]);
+}
+console.log("第三个单词"+words[3]);
+</script>
+</body>
+</html>
