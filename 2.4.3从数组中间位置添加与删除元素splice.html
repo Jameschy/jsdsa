@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>从数组中间位置删除与添加元素 push</title>
+</head>
+<body>
+<script type="text/javascript">
+    // A.push b；在数组A之后新增b元素
+    // A.unshift b 在数组A之前新增b元素
+    var aArr = [1,2,3,7,8,9];
+    var bArr = [4,5,6];
+
+    aArr.splice(3,0,bArr);
+    console.log(aArr);
+
+</script>
+</body>
+</html>
