@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query('SELECT * from db02', //db01数据表名
+connection.query('SELECT * from db01', //db01数据表名
     function (error, results, fields) {
     if (error) throw error;
     for(var i=0;i<results.length;i++){
@@ -24,3 +24,8 @@ connection.query('SELECT * from db02', //db01数据表名
 // 3.https://blog.csdn.net/qq_31070475/article/details/65042912
 // 5.https://blog.csdn.net/kuangshp128/article/details/75074704
 // 6.http://nodejs.cn/api/async_hooks.html
+
+// 测试方法：
+// 1保持本地数据库开启；
+// 2确认本地数据表db01有参数；
+// 3使用Terminal命令或cmd命令====>node test.js

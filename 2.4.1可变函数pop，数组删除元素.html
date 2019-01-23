@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组删除元素 push</title>
+</head>
+<body>
+<script type="text/javascript">
+    // A.pop ；删除数组最后一个元素
+    // A.shift ； 删除数组第一个元素
+    var aArr = ["David", "Cynthia", "Mike", "Jennifer"];
+    var bArr = ["Raymond", "Clayton", "James"];
+
+    console.log(aArr);
+    aArr.pop();
+    console.log(aArr);
+    bArr.shift();
+    console.log(bArr);
+
+    var nums = ['6','1','2','3','4','5'];
+    var first = nums.shift();
+    console.log(first);
+    console.log(nums.shift());
+    nums.push(first);
+    console.log(nums);
+</script>
+</body>
+</html>
