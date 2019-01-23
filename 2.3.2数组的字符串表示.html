@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组转为字符串</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 将数组转为字符串的方法>>>>>join() OR toString()
+    var names = ["David", "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+    var nameStr = names.join();
+    console.log("join方法"+nameStr);
+    nameStr =names.toString();
+    console.log("ToString"+nameStr);
+    // console.log(names);
+
+    // 将字符串转为数组 split，将一个字符串以某字符切开并返回数组
+    var arrString = "David,Cynthia,Raymond,Clayton,Mike,Jennifer";
+    // var baseArr = [];
+
+   var baseArr = arrString.split(",");
+    console.log(baseArr);
+
+
+</script>
+</body>
+</html>

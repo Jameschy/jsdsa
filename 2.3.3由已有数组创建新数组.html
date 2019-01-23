@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组新建拼合与拆分</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 将数组拼合 A.concat(B) =====> [A,B]
+    var aArr = ["David", "Cynthia", "Mike", "Jennifer"];
+    var bArr = ["Raymond", "Clayton"];
+
+    var itDiv = aArr.concat(bArr);
+    console.log(itDiv);
+
+    var atDiv = bArr.concat(aArr);
+    console.log(atDiv);
+
+
+    // 将数组断取 A.splice(a,b) =====> A数组中第a个开始截取，截取b个单元
+    var btDiv = atDiv.splice(2,2)
+    console.log(btDiv);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找元素</title>
+</head>
+<body>
+<script type="text/javascript">
+    var names = ["David", "Mike", "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+    var name = 'Mike';
+
+    var firstPos = names.indexOf(name);
+    // indexOf() 返回第一个与所求参数相同的元素下标
+    console.log('First Found' + name + 'at position' + firstPos);
+
+    var lastPos = names.lastIndexOf(name);
+    // lastIndexOf() 返回最后一个与所求参数相同的元素下标
+    console.log('Last found' + name + 'at position' + lastPos);
+</script>
+</body>
+</html>

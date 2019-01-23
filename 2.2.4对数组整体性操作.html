@@ -6,11 +6,29 @@
 </head>
 <body>
 <script type="text/javascript">
+    // 深复制函数
+    function copy(arr1,arr2) {
+        for(var i =0 ; i<arr1.length;++i){
+            arr2[i] = arr1[i];
+        }
+    }
+    // 浅复制
     var nums = [];
-    for (var i = 0;i<10; ++i){
+    for (var i = 0;i<100; ++i){
         nums[i] = i+1;
     }
-    var samenums = nums;
+    // var samenums = nums;
+    var samenums = [];
+    copy(nums,samenums);
+    nums[0] = 400;
+    console.log(samenums[0]);
+    // 浅复制结果 400
+    // 深复制结果 1
+
+
+    var addd=[1,2,3,4,5];
+
+    console.log(addd);
 </script>
 </body>
 </html>
