@@ -17,3 +17,10 @@ connection.query('SELECT * from db02', //db01数据表名
     }
     //console.log(results)
 });
+
+//From :
+// 1.https://blog.csdn.net/u012475786/article/details/72621257
+// 2.https://blog.csdn.net/zxc123e/article/details/53232409
+// 3.https://blog.csdn.net/qq_31070475/article/details/65042912
+// 5.https://blog.csdn.net/kuangshp128/article/details/75074704
+// 6.http://nodejs.cn/api/async_hooks.html
