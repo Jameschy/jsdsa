@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<head>
+    <title>div scroll</title>
+</head>
+<style type="text/css">
+    .log {
+        position:absolute; /*绝对定位*/
+        top:0%; /*距顶部50%*/
+        bottom: 0;
+        left:50%;
+        /*margin:-100px 0 0 -150px; !*设定这个div的margin-top的负值为自身的高度的一半,margin-left的值也是自身的宽度的一半的负值.(感觉在绕口令)*!*/
+        width:100%; /*宽为400,那么margin-top为-200px*/
+        height:200px; /*高为200那么margin-left为-100px;*/
+        z-index:99; /*浮动在最上层 */
+        background-color: #a7dbd8;
+    }
+</style>
+<body>
+<div style="width: 100%;max-width: 650px;max-height: 650px;height:650px;background-color: black;position: relative;margin: 0 auto">
+    <div class="log"></div>
+</div>
+
+</body>
+</html>

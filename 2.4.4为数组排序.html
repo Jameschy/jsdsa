@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可变函数-为数组排序-reverse（）</title>
+</head>
+<body>
+<script type="text/javascript">
+    var nums = [1,2,3,4,5];
+    var nums0 = [1,6,8,4,35,7,0]
+
+    // reverse();倒序方法
+    nums0.reverse();
+    console.log(nums0);
+
+    var names =["David","Mike","Cynthia","ClayTon","Bryan","Raymond"];
+    names.sort();
+    // sort方法，是按照字典顺序排序
+    console.log(names);
+    var numsi =[3,1,2,100,4,200,1];
+
+    function compare(num1, num2) {
+        return num1 - num2;
+    }
+
+    numsi.sort(compare);
+    console.log(numsi);
+
+</script>
+</body>
+</html>
