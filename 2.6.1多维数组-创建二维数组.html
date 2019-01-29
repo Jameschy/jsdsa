@@ -24,8 +24,20 @@
         return arr;
     }
 
+
     var nums = Array.matrix(5,5,0);
+    // 在第二行第三列加入done
+    nums[1][2] = "Done";
+    console.log(nums);
     console.log(nums[1][1]);
+
+    var names = Array.matrix(3,3,"");
+    names[1][2] = "Joe";
+    console.log(names);
+    console.log(names[1][2]);//joe
+
+    var grades = [[89,77,78],[76,82,81],[91,94,89]];
+    console.log(grades[2][2]);//89
 </script>
 
 </body>
